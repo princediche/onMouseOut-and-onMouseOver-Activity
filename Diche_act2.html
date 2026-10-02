@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diche-Activity 2</title>
+</head>
+<body>
+    <h3>Activity 2</h3>
+    <p>My Full Name using onMouseOver and onMouseOut</p>
+    <h1 id="mytext" onmouseover="mouseoverfunction()" onmouseout="mouseoutfunction()">Prince Diche</h1>
+</body>
+<script>
+    let text = document.getElementById('mytext');
+    let originalText = text.textContent;
+    function mouseoverfunction() {
+        text.textContent = originalText.toUpperCase();
+        text.style.color = 'blue';
+    }
+
+    function mouseoutfunction() {
+        text.textContent = originalText;
+        text.style.color = 'red';
+    }
+</script>
+</html>
